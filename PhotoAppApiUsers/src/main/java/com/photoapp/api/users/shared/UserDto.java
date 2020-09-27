@@ -1,5 +1,8 @@
 package com.photoapp.api.users.shared;
 
+import com.photoapp.api.users.ui.models.AlbumResponseModel;
+import java.util.List;
+
 public class UserDto {
     private String firstName;
     private String lastName;
@@ -7,6 +10,15 @@ public class UserDto {
     private String password;
     private String userId;
     private String encryptedPassword;
+    List<AlbumResponseModel> albums;
+
+    public List<AlbumResponseModel> getAlbums() {
+        return albums;
+    }
+
+    public void setAlbums(List<AlbumResponseModel> albums) {
+        this.albums = albums;
+    }
 
     public String getFirstName() {
         return firstName;
